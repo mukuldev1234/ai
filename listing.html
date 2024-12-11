@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Listing</title>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo" class="logo">
+  </div>
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Search employees by name...">
+    </div>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+      ☰
+    </div>
+    <nav class="nav-menu" id="nav-menu">
+      <a href="index.html">Employee Registration</a>
+      <a href="listing.html">Employee Listing</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="listing">
+    <h1>Employee Listing</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Position</th>
+          <th>About</th>
+          <th>Joining Date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="employee-list"></tbody>
+    </table>
+    <div id="pagination"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Your Name</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
